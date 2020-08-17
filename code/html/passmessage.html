@@ -6,21 +6,22 @@
     <link rel="stylesheet" href="/public/style.css">
     <title>PassMessage</title>
 </head>
-<body class="bg-gray-900">
+<body class="bg-gray-300">
     <div class="flex h-screen">
-        <div class="m-auto  bg-white rounded overflow-hidden shadow-lg">
-            <img class="w-full" src="/img/card-top.jpg" alt="Sunset in the mountains">
-            <div class="px-6 py-4">
-              <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
-              <p class="text-gray-700 text-base">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
-              </p>
-            </div>
-            <div class="px-6 py-4">
-              <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">#photography</span>
-              <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">#travel</span>
-              <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700">#winter</span>
-            </div>
+        <div class="m-auto bg-white  w-6/12 rounded overflow-hidden shadow-lg">
+            <h1 class="text-center text-purple-700 mt-5 text-2xl">Give a message </h1>
+           <div class="flex justify-center">
+            <form id="message-form" class="bg-white px-8 pt-6 pb-8 mb-4">
+                <div class="mb-4">
+                  <input id="message"  class="shadow appearance-none border rounded w-full py-2 px-10 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="text" placeholder="Text any things">
+                </div>
+                <button type="submit" id="generate-btn" class="ml-12 mt-2 bg-purple-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                    generate qoute
+            </button>
+              </form>
+           </div>
+            <h1 class="text-center text-4xl feedback">Last Message Delivered</h1>
+            <h3 class="text-center text-xl uppercase message-content">Hello</h3>
         </div>
     </div>
     <script src="/code/js/passmesaage.js"> </script>
