@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/style.css">
+    <title>Document</title>
+</head>
+<body class="bg-orange-300">
+    <div class="flex h-screen">
+        <div class="m-auto bg-white w-6/12 rounded shadow-lg overflow-hidden">
+            <h1 class="mt-10 text-3xl text-center">Counter</h1>
+            <h1 class="text-center font-bold text-6xl text-blue-700" id="counter">0</h1>
+            <div class="ml-20 mr-20 mt-20 mb-10 flex items-center justify-between">
+                <button id="low-button" class="prevBtn counterBtn bg-orange-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">
+                  Low Counter
+                </button>
+                <button id="add-button" class="nextBtn counterBtn bg-orange-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">
+                    Add Counter
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src="/code/js/counter.js"></script>
+</body>
+</html>
