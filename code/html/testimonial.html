@@ -5,17 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/public/style.css">
     <title>Document</title>
+    <link rel="stylesheet" href="/code/css/testimonial.css">
     <style>
         body {
-            background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) ,url('/code/img/london.jpg')center/cover no-repeat fixed;
+            min-height: 100vh;
+            background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) ,url('/code/img/car.jpg')center/cover no-repeat fixed;
         }
     </style>
 </head>
 <body>
-    <div class="flex h-screen">
-        <div class="m-auto bg-white">
-            hello
+    <div class="">
+        <div class="mt-10">
+            <h2 class="text-center uppercase text-yellow-300 font-bold text-4xl">Client</h2>
+            <h1 class="text-center uppercase text-white font-extrabold text-5xl">testimonial</h1>
         </div>
+        <div class="flex mt-10">
+            <div class="m-auto rounded border-2 border-white w-6/12"> 
+                <img class="img m-auto rounded-full h-20 w-20 flex items-center justify-center" style="margin-top: -40px;" src="/code/img/field.jpg" alt="">
+                <div class="overflow-hidden m-3">
+                    <h1 class="name text-white text-center m-5 uppercase forn-bold text-3xl">Name</h1>
+                    <p class="txt text-white mb-5">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here'</p>
+                </div>
+            </div>
+        </div>
+        <p class="text-white nextBtn text-left" style="margin-left: 306px; margin-top: -130px;"><button class="bg-blue-800">prev</button></p>
+        <p class="text-white nextBtn text-right"  style="margin-right: 307px; margin-top: -30px;"><button class="bg-blue-800">next</button></p>
     </div>
 </body>
 </html>
