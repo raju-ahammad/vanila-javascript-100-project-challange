@@ -18033,6 +18033,49 @@ video {
           animation: bounce 1s infinite;
 }
 
+.btn {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  --bg-opacity: 1;
+  background-color: #319795;
+  background-color: rgba(49, 151, 149, var(--bg-opacity));
+  margin-top: 3rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-left: 5rem;
+  --text-opacity: 1;
+  color: #fff;
+  color: rgba(255, 255, 255, var(--text-opacity));
+  border-radius: 0.125rem;
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+  transition-duration: 500ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  --transform-translate-x: 0;
+  --transform-translate-y: 0;
+  --transform-rotate: 0;
+  --transform-skew-x: 0;
+  --transform-skew-y: 0;
+  --transform-scale-x: 1;
+  --transform-scale-y: 1;
+  transform: translateX(var(--transform-translate-x)) translateY(var(--transform-translate-y)) rotate(var(--transform-rotate)) skewX(var(--transform-skew-x)) skewY(var(--transform-skew-y)) scaleX(var(--transform-scale-x)) scaleY(var(--transform-scale-y));
+}
+
+.btn:hover {
+  --bg-opacity: 1;
+  background-color: #68d391;
+  background-color: rgba(104, 211, 145, var(--bg-opacity));
+  --text-opacity: 1;
+  color: #fff;
+  color: rgba(255, 255, 255, var(--text-opacity));
+  --transform-translate-y: -0.25rem;
+}
+
+.btn:focus {
+  outline: 0
+}
+
+/* transition duration-500 ease-in-out bg-blue-500 hover:bg-red-500 transform hover:translate-x-4 */
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;

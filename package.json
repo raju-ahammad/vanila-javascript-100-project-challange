@@ -4,12 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build-css": "tailwind build src/style.css -o public/style.css"
+    "build": "postcss src/style.css -o public/style.css",
+    "watch": "postcss src/style.css -o public/style.css --watch"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "autoprefixer": "^9.8.6",
+    "postcss-cli": "^7.1.2",
     "tailwindcss": "^1.6.2"
   }
 }
