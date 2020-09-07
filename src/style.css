@@ -15,3 +15,32 @@
 }
 
 /* transition duration-500 ease-in-out bg-blue-500 hover:bg-red-500 transform hover:translate-x-4 */
+/* 
+@media screen and (max-width: 700px) {
+    .nav {
+        max-width: 1170px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem;
+        background-color: rebeccapurple;
+    }
+} */
+
+@media screen and (max-width: 700px) {
+    .nav {
+        height: 100px;
+    }
+}
+@media screen and (max-width: 700px) {
+    .show {
+        visibility: hidden;
+
+    }
+}
+/* @media screen and (max-width: 700px) {
+    .show {
+        visibility: visible;
+    }
+} */
