@@ -57,3 +57,11 @@
 .dropdown:hover .dropdown-menu{
     display: block;
 }
+
+.q-text {
+    display: none;
+}
+
+/* .show-text .q-text {
+    display: block;
+} */

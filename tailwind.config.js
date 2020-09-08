@@ -9,7 +9,11 @@ module.exports = {
       'xl': '1280px',
       'xxl': '1590px',
     },
-    extend: {},
+    extend: {
+      spacing: {
+        '144': '36rem'
+      }
+    },
   },
   variants: {},
   plugins: [],
