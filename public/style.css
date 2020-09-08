@@ -18121,11 +18121,17 @@ video {
   }
 }
 
-/* @media screen and (max-width: 700px) {
-    .show {
-        visibility: visible;
-    }
-} */
+.hid {
+  visibility: hidden;
+}
+
+.drop-hide {
+  visibility: hidden;
+}
+
+.trans {
+  transform: rotate(90deg);
+}
 
 @media (min-width: 400px) {
   .xs\:container {
