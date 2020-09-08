@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/style.css">
+    <title>Modal</title>
+    <style>
+        body {
+            background:linear-gradient(rgba(180, 170, 23, 0.3),rgba(194, 24, 24, 0.3)) ,url('../img/chair.jpg')center/cover no-repeat fixed
+        }
+    </style>
+</head>
+<body>
+    <div class="flex justify-center items-center h-screen ">
+        <div class=" relative">
+            <div class=" bg-teal-100 px-40 py-20 rounded-lg shadow-lg overflow-visible">
+                <h1 class="font-bold text-5xl text-gray-900 mb-6">Modal Project</h1>
+                <button class="uppercase py-2 px-6 bg-blue-600 ml-20 hover:bg-blue-500 text-white focus:outline-none focus:shadow-outline rounded-sm">open model</button>
+            </div>
+            <div class="absolute top-0 mt-12 ml-32">
+                <div style="width:25rem; height: 12rem;" class="bg-white  p-12 rounded-lg shadow-lg  relative ">
+                    <h1 class="font-bold text-3xl text-center">Modal content</h1>
+                    <button class="absolute top-0 right-0 py-2 px-4 focus:outline-none focus:shadow-outline "><h1 class=" font-semibold text-red-600 text-3xl">X</h1></button>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>
