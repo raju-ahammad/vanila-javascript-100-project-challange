@@ -18133,6 +18133,10 @@ video {
   transform: rotate(90deg);
 }
 
+.dropdown:hover .dropdown-menu{
+  display: block;
+}
+
 @media (min-width: 400px) {
   .xs\:container {
     width: 100%;
