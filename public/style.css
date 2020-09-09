@@ -18517,6 +18517,12 @@ video {
   display: block;
 }
 
+.but:hover {
+  border: 0px solid gray;
+  border-radius: 2px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 @media (min-width: 400px) {
   .xs\:container {
     width: 100%;
