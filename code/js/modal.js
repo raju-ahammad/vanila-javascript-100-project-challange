@@ -8,5 +8,10 @@ modalBtn.addEventListener("click", function(){
 })
 
 toggleBtn.addEventListener("click", function(){
-    tog.classList.remove("hid")
+    if (toggle.classList.contains("hid")) {
+        toggle.classList.remove("hid")
+    }else {
+        toggle.classList.add("hid")
+    }
+    
 })
