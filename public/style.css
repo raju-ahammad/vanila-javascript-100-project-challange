@@ -18327,9 +18327,9 @@ video {
   display: none;
 }
 
-/* .show-text .q-text {
-    display: block;
-} */
+.show-text .q-text {
+  display: block;
+}
 
 @media (min-width: 400px) {
   .xs\:container {
