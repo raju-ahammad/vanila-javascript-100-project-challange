@@ -12,7 +12,7 @@ const menu = [
       title: "diner double",
       category: "lunch",
       price: 13.99,
-      img: "../img/cake/cake-1.jpeg",
+      img: "../img/cake/cake-2.jpeg",
       desc: `vaporware iPhone mumblecore selvage raw denim slow-carb leggings gochujang helvetica man braid jianbing. Marfa thundercats `,
     },
     {
@@ -20,7 +20,7 @@ const menu = [
       title: "godzilla milkshake",
       category: "shakes",
       price: 6.99,
-      img: "../img/cake/cake-1.jpeg",
+      img: "../img/cake/cake-3.jpeg",
       desc: `ombucha chillwave fanny pack 3 wolf moon street art photo booth before they sold out organic viral.`,
     },
     {
@@ -28,7 +28,7 @@ const menu = [
       title: "country delight",
       category: "breakfast",
       price: 20.99,
-      img: "../img/cake/cake-1.jpeg",
+      img: "../img/cake/cupcake-3.jpeg",
       desc: `Shabby chic keffiyeh neutra snackwave pork belly shoreditch. Prism austin mlkshk truffaut, `,
     },
     {
@@ -36,7 +36,7 @@ const menu = [
       title: "egg attack",
       category: "lunch",
       price: 22.99,
-      img: "../img/cake/cake-1.jpeg",
+      img: "../img/cake/cake-2.jpeg",
       desc: `franzen vegan pabst bicycle rights kickstarter pinterest meditation farm-to-table 90's pop-up `,
     },
     {
@@ -44,7 +44,7 @@ const menu = [
       title: "oreo dream",
       category: "shakes",
       price: 18.99,
-      img: "../img/cake/cake-1.jpeg",
+      img: "../img/cake/cake-3.jpeg",
       desc: `Portland chicharrones ethical edison bulb, palo santo craft beer chia heirloom iPhone everyday`,
     },
     {
@@ -52,7 +52,7 @@ const menu = [
       title: "bacon overflow",
       category: "breakfast",
       price: 8.99,
-      img: "../img/cake/cake-1.jpeg",
+      img: "../img/cake/cupcake-2.jpeg",
       desc: `carry jianbing normcore freegan. Viral single-origin coffee live-edge, pork belly cloud bread iceland put a bird `,
     },
     {
@@ -60,7 +60,7 @@ const menu = [
       title: "american classic",
       category: "lunch",
       price: 12.99,
-      img: "../img/cake/cake-1.jpeg",
+      img: "../img/cake/cupcake-1.jpeg",
       desc: `on it tumblr kickstarter thundercats migas everyday carry squid palo santo leggings. Food truck truffaut  `,
     },
     {
@@ -68,7 +68,7 @@ const menu = [
       title: "quarantine buddy",
       category: "shakes",
       price: 16.99,
-      img: "../img/cake/cake-1.jpeg",
+      img: "../img/cake/cupcake-3.jpeg",
       desc: `skateboard fam synth authentic semiotics. Live-edge lyft af, edison bulb yuccie crucifix microdosing.`,
     },
     {
@@ -81,14 +81,47 @@ const menu = [
     },
   ];
 
-const item = document.querySelector(".main-item")
+const mainItem = document.querySelector(".main-item")
+const filterBtn =document.querySelectorAll(".filter-btn")
 
 window.addEventListener("DOMContentLoaded", function(){
-  let displayMenu = menu.map(function(item){
-    console.log(item);
-    return item;
-    
-  })
-  console.log(displayMenu);
+  displayMenuItem(menu)
 })
  
+
+filterBtn.forEach(function(btn){
+  btn.addEventListener("click", function(e){
+    const category = e.currentTarget.dataset.id;
+    const menuCategory = menu.filter(function(menuItem){
+      if (menuItem.category === category) {
+        return menuItem;
+      }
+    })
+    if (category ==="all") {
+      displayMenuItem(menu);
+    } else {
+      displayMenuItem(menuCategory)
+    }
+  })
+})
+
+
+
+function displayMenuItem(menuItems) {
+  let displayMenu = menuItems.map(function(item){
+    return `<div class="flex items-center justify-center flex-col m-4 hover:border-4 hover:border-red-500 ">
+              <a href="" class="but">
+                  <div class="w-128 ">
+                      <img class="h-40 w-full " src=${item.img} alt="">
+                      <div class="flex justify-between items-center p-2">
+                          <h3 class="m-2 font-medium text-xl">${item.title}</h3>
+                          <h4 class="text-orange-500">$ ${item.title}</h4>
+                      </div>
+                      <p class="p-4">${item.desc}</p>
+                  </div>
+              </a>
+          </div>`;
+  })
+  displayMenu = displayMenu.join("");
+  mainItem.innerHTML = displayMenu;
+}
