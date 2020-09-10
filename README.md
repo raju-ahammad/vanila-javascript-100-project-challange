@@ -1,3 +1,5 @@
-
-img
-https://github.com/raju-ahammad/vanila-javascript-100-project-challange/blob/master/code/img/screenshot/Annotation%202020-09-11%20005847.png
+<h1> Store Image Filter</h1>
+<img
+src="./code/img/screenshot/Annotation 2020-09-11 005847.png"
+alt="Store image"
+/>
